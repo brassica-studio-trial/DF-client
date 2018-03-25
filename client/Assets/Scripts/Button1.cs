@@ -8,6 +8,13 @@ public class Button1 : MonoBehaviour {
     public void OnClick()
     {
         Debug.Log("Button click!");
+        // キャラのプレファブを取得
+        GameObject charaTest = (GameObject)Resources.Load("Prefabs/animeTest");
 
+        // キャラ開始ポジションを設定
+        Vector3 position = new Vector3(-440, -560, 480);
+
+        // プレファブからインスタンス生成
+        Instantiate(charaTest, position, Quaternion.identity);
     }
 }
