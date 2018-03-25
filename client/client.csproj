@@ -297,6 +297,8 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Button1.cs" />
     <Compile Include="Assets\Scripts\Main.cs" />
+    <Compile Include="Assets\Scripts\TowerLeft.cs" />
+    <Compile Include="Assets\Scripts\TowerRight.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
