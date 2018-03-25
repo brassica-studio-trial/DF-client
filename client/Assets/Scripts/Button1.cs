@@ -8,5 +8,6 @@ public class Button1 : MonoBehaviour {
     public void OnClick()
     {
         Debug.Log("Button click!");
+
     }
 }
