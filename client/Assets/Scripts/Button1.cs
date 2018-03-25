@@ -11,10 +11,14 @@ public class Button1 : MonoBehaviour {
         // キャラのプレファブを取得
         GameObject charaTest = (GameObject)Resources.Load("Prefabs/animeTest");
 
+        // 生成先のオブジェクトを取得
+        GameObject TowerLeft = GameObject.Find("TowerLeft");
+
         // キャラ開始ポジションを設定
         Vector3 position = new Vector3(-440, -560, 480);
 
         // プレファブからインスタンス生成
-        Instantiate(charaTest, position, Quaternion.identity);
+        //GameObjectのTowerLeftの子として生成
+        Instantiate(charaTest, position, Quaternion.identity, TowerLeft.transform);
     }
 }
