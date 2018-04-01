@@ -7,13 +7,14 @@ public class Main : MonoBehaviour {
 
 
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
+    // Use this for initialization
+    void Start () {
+    
+    }
+
 	// Update is called once per frame
 	void Update () {
-		
-	}
+        this.gameObject.transform.Translate(0.2f, 0, 0);
+
+    }
 }
