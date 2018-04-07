@@ -14,7 +14,7 @@ public class Main : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-        this.gameObject.transform.Translate(0.2f, 0, 0);
+        this.gameObject.transform.Translate(0.8f, 0, 0);
 
     }
 }

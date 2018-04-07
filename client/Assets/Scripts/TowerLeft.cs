@@ -1,32 +1,25 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TowerLeft : MonoBehaviour {
 
+    private double m_energyChargeSpeeds;
+
+    public double chargedEnergies;
+
 	// Use this for initialization
 	void Start () {
-		
-	}
+
+        m_energyChargeSpeeds = 1;
+    }
 	
 	// Update is called once per frame
 	void Update () {
-        var parent = GameObject.Find("TowerLeft/animeTest(Clone)") as GameObject;
 
-        if (parent != null)
-        {
-            // 子のTransformを取り出す
-            var transforms = parent.GetComponentsInChildren<Transform>();
-
-
-            float posX = transform.position.x;
-            float posY = transform.position.y;
-            float posZ = transform.position.z;
-            posX++;
-            transform.position.Set(posX, posY, posZ);
-
-        }
-
-
-    }
+        chargedEnergies += m_energyChargeSpeeds;
+        Debug.Log(chargedEnergies);
+        
+            }
 }
