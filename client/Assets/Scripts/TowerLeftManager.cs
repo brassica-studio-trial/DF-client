@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TowerLeft : MonoBehaviour {
+public class TowerLeftManager : MonoBehaviour {
 
     private double m_energyChargeSpeeds;
     public double chargedEnergies;

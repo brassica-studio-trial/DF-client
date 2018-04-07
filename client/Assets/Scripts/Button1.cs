@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Button1 : MonoBehaviour {
 
-    public TowerLeft towerLeft;
+    public TowerLeftManager towerLeft;
     const double button1EnergyCost = 100;
 
     /// ボタンをクリックした時の処理
@@ -13,8 +13,7 @@ public class Button1 : MonoBehaviour {
         Debug.Log("Button click!");
 
         //TowerLeftのchargedEnergiesからbutton1EnergyCostを引く
-        towerLeft.GetComponent<TowerLeft>().chargedEnergies -= button1EnergyCost;
-
+        towerLeft.GetComponent<TowerLeftManager>().chargedEnergies -= button1EnergyCost;
 
 
        // キャラのプレファブを取得
