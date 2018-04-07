@@ -20,7 +20,9 @@ public class TowerLeft : MonoBehaviour {
 	void Update () {
 
         chargedEnergies += m_energyChargeSpeeds;
+#if Debug
         Debug.Log(chargedEnergies);
+#endif
         energyScore.GetComponent<EnergyScore>().energyScore = chargedEnergies;
 
             }

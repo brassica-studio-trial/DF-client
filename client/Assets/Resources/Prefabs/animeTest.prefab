@@ -22,10 +22,10 @@ GameObject:
   - component: {fileID: 212210881121012004}
   - component: {fileID: 95871186468114838}
   - component: {fileID: 114050253145189920}
-  - component: {fileID: 61284272411231418}
+  - component: {fileID: 65233883077898660}
   m_Layer: 0
   m_Name: animeTest
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43,31 +43,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &61284272411231418
-BoxCollider2D:
+--- !u!65 &65233883077898660
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1063909368968674}
-  m_Enabled: 1
-  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.93, y: 0.78}
-    newSize: {x: 0.93, y: 0.78}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.93, y: 0.78}
-  m_EdgeRadius: 0
+  m_Size: {x: 0.93, y: 0.78, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!95 &95871186468114838
 Animator:
   serializedVersion: 3
