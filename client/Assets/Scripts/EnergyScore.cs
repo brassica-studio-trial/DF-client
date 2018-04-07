@@ -14,6 +14,7 @@ public class EnergyScore : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        //double → Stringへのキャスト
         this.GetComponent<Text>().text = energyScore.ToString();
     }
 }

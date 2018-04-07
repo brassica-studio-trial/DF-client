@@ -4,13 +4,20 @@ using UnityEngine;
 
 public class Button1 : MonoBehaviour {
 
+    public TowerLeft towerLeft;
     const double button1EnergyCost = 100;
 
     /// ボタンをクリックした時の処理
     public void OnClick()
     {
         Debug.Log("Button click!");
-        // キャラのプレファブを取得
+
+        //TowerLeftのchargedEnergiesからbutton1EnergyCostを引く
+        towerLeft.GetComponent<TowerLeft>().chargedEnergies -= button1EnergyCost;
+
+
+
+       // キャラのプレファブを取得
         GameObject charaTest = (GameObject)Resources.Load("Prefabs/animeTest");
 
         // 生成先のオブジェクトを取得
