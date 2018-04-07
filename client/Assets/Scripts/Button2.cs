@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Button2 : MonoBehaviour
 {
+
+    const double button2EnergyCost = 200;
+
     /// ボタンをクリックした時の処理
     public void OnClick()
     {
