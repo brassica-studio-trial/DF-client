@@ -298,6 +298,7 @@
     <Compile Include="Assets\Scripts\Button1.cs" />
     <Compile Include="Assets\Scripts\Button2.cs" />
     <Compile Include="Assets\Scripts\Enemy1.cs" />
+    <Compile Include="Assets\Scripts\EnergyScore.cs" />
     <Compile Include="Assets\Scripts\Main.cs" />
     <Compile Include="Assets\Scripts\TowerLeft.cs" />
     <Compile Include="Assets\Scripts\TowerRight.cs" />
