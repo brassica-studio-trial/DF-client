@@ -29,7 +29,7 @@ public class TowerLeftManager : MonoBehaviour {
 
     public bool EnergyCost(double costEnergy)
     {
-        if (chargedEnergies >= costEnergy )
+        if (chargedEnergies >= costEnergy)
         {
             chargedEnergies -= costEnergy;
             return true;

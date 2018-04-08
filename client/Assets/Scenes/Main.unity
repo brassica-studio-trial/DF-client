@@ -2278,6 +2278,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   towerLeft: {fileID: 2042824622}
+  EnergyCost: 0
 --- !u!114 &903147321
 MonoBehaviour:
   m_ObjectHideFlags: 0

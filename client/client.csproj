@@ -301,7 +301,7 @@
     <Compile Include="Assets\Scripts\EnergyScore.cs" />
     <Compile Include="Assets\Scripts\Main.cs" />
     <Compile Include="Assets\Scripts\RightTowerHP.cs" />
-    <Compile Include="Assets\Scripts\TowerLeft.cs" />
+    <Compile Include="Assets\Scripts\TowerLeftManager.cs" />
     <Compile Include="Assets\Scripts\TowerRight.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
