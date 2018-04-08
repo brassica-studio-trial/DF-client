@@ -26,4 +26,17 @@ public class TowerLeftManager : MonoBehaviour {
         energyScore.GetComponent<EnergyScore>().energyScore = chargedEnergies;
 
             }
+
+    public bool EnergyCost(double costEnergy)
+    {
+        if (chargedEnergies >= costEnergy )
+        {
+            chargedEnergies -= costEnergy;
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
 }
