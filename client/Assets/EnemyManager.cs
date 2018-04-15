@@ -28,7 +28,7 @@ public class EnemyManager : MonoBehaviour {
         pastTime++;
 
 
-        if ( pastTime == 1000)
+        if ( pastTime == 500)
         {
             // キャラ開始ポジションを設定
             Vector3 position = TowerRight.transform.position;
