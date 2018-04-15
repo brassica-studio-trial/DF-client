@@ -5,6 +5,7 @@ using UnityEngine;
 public class Enemy1 : MonoBehaviour {
 
     const double attack = 20;
+    const double HP = 100;
 
     private bool flg_attack = false;
 
@@ -23,6 +24,8 @@ public class Enemy1 : MonoBehaviour {
         {
             return;
         }
+
+
     }
 
     void OnTriggerStay(Collider other)

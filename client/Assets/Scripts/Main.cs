@@ -17,7 +17,7 @@ public class Main : MonoBehaviour {
 	void Update () {
         if (!flg_attack)
         {
-            this.gameObject.transform.Translate(0.8f, 0, 0);
+            this.gameObject.transform.Translate(8f, 0, 0);
         }
         else
         {
