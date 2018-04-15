@@ -6,7 +6,7 @@ public class Main : MonoBehaviour {
 
     const double attack = 10;
 
-    private TowerRight towerRight;
+    private bool flg_attack = false;
 
     // Use this for initialization
     void Start () {
@@ -15,11 +15,17 @@ public class Main : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-        this.gameObject.transform.Translate(0.8f, 0, 0);
-
+        if (!flg_attack)
+        {
+            this.gameObject.transform.Translate(0.8f, 0, 0);
+        }
+        else
+        {
+            return;
+        }
     }
 
-    private void OnCollisionEnter(Collision other)
+    void OnTriggerStay(Collider other)
     {
         GameObject enemyObj;
         enemyObj = null;
@@ -28,6 +34,7 @@ public class Main : MonoBehaviour {
         if (other.gameObject.tag == "Enemy")
         {
             enemyObj = other.gameObject;
+            flg_attack = true;
         }
 
         if (enemyObj == null)
@@ -37,6 +44,8 @@ public class Main : MonoBehaviour {
 
         if (enemyObj.name == "TowerRight")
         {
+            
+            TowerRightManager towerRight = enemyObj.GetComponent<TowerRightManager>();
             towerRight.Damage(attack);
         }
     }
