@@ -12,7 +12,7 @@ public class Button2 : MonoBehaviour
     {
         Debug.Log("Button click!");
         // キャラのプレファブを取得
-        GameObject charaTest = (GameObject)Resources.Load("Prefabs/enemy1");
+        GameObject charaTest = (GameObject)Resources.Load("Prefabs/animeTest");
 
         // 生成先のオブジェクトを取得
         GameObject TowerLeft = GameObject.Find("TowerLeft");
