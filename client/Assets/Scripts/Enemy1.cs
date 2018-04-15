@@ -15,7 +15,14 @@ public class Enemy1 : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        this.gameObject.transform.Translate(-0.5f, 0, 0);
+        if (!flg_attack)
+        {
+            this.gameObject.transform.Translate(-0.5f, 0, 0);
+        }
+        else
+        {
+            return;
+        }
     }
 
     void OnTriggerStay(Collider other)

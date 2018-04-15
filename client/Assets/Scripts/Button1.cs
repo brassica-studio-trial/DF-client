@@ -25,7 +25,7 @@ public class Button1 : MonoBehaviour {
             GameObject TowerLeft = GameObject.Find("TowerLeft");
 
             // キャラ開始ポジションを設定
-            Vector3 position = new Vector3(-440, -560, 480);
+            Vector3 position = TowerLeft.transform.position;
 
             // プレファブからインスタンス生成
             //GameObjectのTowerLeftの子として生成
