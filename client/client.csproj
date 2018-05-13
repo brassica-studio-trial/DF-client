@@ -287,8 +287,17 @@
     <Reference Include="UnityEngine.StandardEvents">
       <HintPath>C:/Users/哲也/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
     </Reference>
+    <Reference Include="Google.VersionHandlerImpl_v1.2.64.0">
+      <HintPath>Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.64.0.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.JarResolver_v1.2.64.0">
+      <HintPath>Assets/PlayServicesResolver/Editor/Google.JarResolver_v1.2.64.0.dll</HintPath>
+    </Reference>
     <Reference Include="Google.VersionHandler">
       <HintPath>Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.IOSResolver_v1.2.64.0">
+      <HintPath>Assets/PlayServicesResolver/Editor/Google.IOSResolver_v1.2.64.0.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:/Program Files/Unity5.3.4/Editor/Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -351,6 +360,7 @@
     <Compile Include="Assets\Scripts\HpManager.cs" />
     <Compile Include="Assets\Scripts\Main.cs" />
     <Compile Include="Assets\Scripts\RightTowerHP.cs" />
+    <Compile Include="Assets\Scripts\SceneLoadUtil.cs" />
     <Compile Include="Assets\Scripts\TowerLeftManager.cs" />
     <Compile Include="Assets\Scripts\TowerRightManager.cs" />
   </ItemGroup>
