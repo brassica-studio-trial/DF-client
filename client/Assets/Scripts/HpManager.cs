@@ -23,7 +23,8 @@ public class HpManager : MonoBehaviour {
         }
         else
         {
-            Destroy(gameObject);
+            Debug.Log("---Destroy---");
+            GameObject.Destroy(gameObject);
             return true;
         }
     }

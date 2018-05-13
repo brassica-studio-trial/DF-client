@@ -15,7 +15,7 @@ public class TowerRightManager : MonoBehaviour {
 
         towerRightHP = 1000;
         towerRight = GameObject.Find("TowerRight");
-        hpManager = GetComponent<Main>().GetComponent<HpManager>();
+        hpManager = GetComponent<HpManager>();
             
     }
 	
@@ -28,7 +28,7 @@ public class TowerRightManager : MonoBehaviour {
         {
             
             hpManager.DestroyCheck(towerRight);
-
+            
         }
 
     }
